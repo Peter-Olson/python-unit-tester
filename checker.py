@@ -9,19 +9,27 @@ IMPORT_NAME = Julian_To_HW4
 """
     Checker Program
 
+    Checker.py is designed to run unit tests on the functions in another .py file by using
+    unit test data that is stored in .txt files. Checker is designed for computer science
+    teachers to grade student work.
+
+    In order to use Checker, you must change the import name to be the name of the .py file
+    that you want to grade (see lines 6 and 7)
+
+    All functions that will be tested must have 'foo_' in the function name, and must be in same
+    order as the unit_test_#assignmentname_#.txt files
+
     The Python equivalent of the Java Checker / UnitTester.java programs, for checking student
     code files and running unit tests for student-written functions / programs
 
     @author Peter Olson
-    @version 11.7.22
+    @version 12.1.22
 """
 
 # ---------------------------------------------------------------------------------------------
 # Convert .py to .txt. Collect function names in a list.
 # --> Run functions using getattr + parameters. Probably want to decorate correct functions
 # --> to run using some identifiable token, e.g. foo_<original_function_name>, search for 'foo'
-# Still requires running import file... amend by pushing all code into a block requiring the
-# __name__ to be __main__, which would be false when running a script from a different .py file
 # ---------------------------------------------------------------------------------------------
 
 # Globals for functions
